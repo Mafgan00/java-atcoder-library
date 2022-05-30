@@ -1,1 +1,0 @@
-# java-atcoder-library
