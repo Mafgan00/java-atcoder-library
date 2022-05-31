@@ -152,11 +152,45 @@ class FastReader {
 			a[i] = nextInt();
 		return a;
 	}
+    
     public Integer[] nextIntegerArray(int n) {
     	Integer[] a = new Integer[n];
     	for (int i = 0; i < n; i++)
     		a[i] = nextInt();
     	return a;
     }
- 
+    
+    public String[] nextSplit() {
+    	String[] a = next().split("");
+    	return a;
+    }
+    
+    public Integer[] nextIntegerSplit() {
+    	String data =next();
+    	Integer[] a = new Integer[data.length()];
+    	for (int i = 0; i < data.length(); i++) {
+    	a[i] = Integer.valueOf(String.valueOf(data.charAt(i)));
+    	}
+        return a;
+    }
+    
+    public String[][] next2D(int n, int m){
+    	String[][] a = new String[n][m];
+    	for(int i = 0; i < n; i++) {
+    		for(int j = 0; j < m; j++) {
+    			a[i][j] = next();
+    		}
+    	}
+    	return a;
+    }
+    
+    public Integer[][] nextInteger2D(int n, int m){
+    	Integer[][] a = new Integer[n][m];
+    	for(int i = 0; i < n; i++) {
+    		for(int j = 0; j < m; j++) {
+    			a[i][j] = nextInt();
+    		}
+    	}
+    	return a;
+    }
 }
