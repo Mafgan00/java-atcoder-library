@@ -174,20 +174,20 @@ class FastReader {
         return a;
     }
     
-    public String[][] next2D(int n, int m){
-    	String[][] a = new String[n][m];
+    public String[][] next2D(int n){
+    	String[][] a = new String[n][2];
     	for(int i = 0; i < n; i++) {
-    		for(int j = 0; j < m; j++) {
+    		for(int j = 0; j < 2; j++) {
     			a[i][j] = next();
     		}
     	}
     	return a;
     }
     
-    public Integer[][] nextInteger2D(int n, int m){
-    	Integer[][] a = new Integer[n][m];
+    public Integer[][] nextInteger2D(int n){
+    	Integer[][] a = new Integer[n][2];
     	for(int i = 0; i < n; i++) {
-    		for(int j = 0; j < m; j++) {
+    		for(int j = 0; j < 2; j++) {
     			a[i][j] = nextInt();
     		}
     	}
